@@ -191,7 +191,7 @@ export default function DriverPortal() {
                                     <div className="space-y-3 bg-slate-950/50 p-4 rounded-lg border border-indigo-500/30">
                                         <div className="flex items-center gap-3 text-slate-300">
                                             <div className="w-6 flex justify-center"><Navigation className="w-4 h-4 text-slate-500" /></div>
-                                            <span className="font-mono text-sm">{activeJob.origin || 'Depot'}</span>
+                                            <span className="font-mono text-sm">{activeJob.pickup || 'Depot'}</span>
                                         </div>
                                         <div className="ml-3 h-4 border-l border-dashed border-slate-700"></div>
                                         <div className="flex items-center gap-3 text-white font-medium">
