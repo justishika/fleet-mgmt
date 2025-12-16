@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 
 @RestController
 @RequestMapping("/drivers")
-@CrossOrigin(origins = "*")
+
 public class DriverController {
 
     private final com.ishika.driver.service.DriverService service;

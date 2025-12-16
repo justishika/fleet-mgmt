@@ -2,8 +2,8 @@ import axios from 'axios';
 
 // API Base URLs - Now using API Gateway (Port 9000)
 // If VITE_ env vars are set, use them. Otherwise default to Gateway.
-const FLEET_BASE_URL = import.meta.env.VITE_FLEET_BASE_URL || 'http://localhost:9000/vehicles';
-const DRIVER_BASE_URL = import.meta.env.VITE_DRIVER_BASE_URL || 'http://localhost:9000/drivers';
+const FLEET_BASE_URL = import.meta.env.VITE_FLEET_BASE_URL || 'http://localhost:9000';
+const DRIVER_BASE_URL = import.meta.env.VITE_DRIVER_BASE_URL || 'http://localhost:9000';
 const DISPATCH_BASE_URL = import.meta.env.VITE_DISPATCH_BASE_URL || 'http://localhost:9000'; // /auth and /jobs are under root context via gateway routes
 
 // Axios Instances

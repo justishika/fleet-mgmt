@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 
 @RestController
 @RequestMapping("/vehicles")
-@CrossOrigin(origins = "*")
+
 public class VehicleController {
 
     private final com.ishika.fleet.service.FleetService service;

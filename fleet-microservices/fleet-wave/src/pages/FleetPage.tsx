@@ -333,9 +333,9 @@ export default function FleetPage() {
                                                 onClick={() => {
                                                     setSelectedVehicle(v);
                                                     setFormData({
-                                                        plate: v.plate,
-                                                        type: v.type,
-                                                        lastLocation: v.lastLocation,
+                                                        plate: v.plate || '',
+                                                        type: v.type || '',
+                                                        lastLocation: v.lastLocation || '',
                                                         assignedDriverId: v.assignedDriverId || ''
                                                     });
                                                     setIsOpen(true);

@@ -221,7 +221,7 @@ export default function DriversPage() {
                                 <div className="flex gap-2">
                                     <Button size="icon" variant="ghost" className="h-8 w-8 text-blue-400 hover:bg-blue-500/10" onClick={() => {
                                         setSelectedDriver(d);
-                                        setFormData({ id: d.id, name: d.name, licenseClass: d.licenseClass, rating: d.rating || 5 });
+                                        setFormData({ id: d.id, name: d.name || '', licenseClass: d.licenseClass || '', rating: d.rating || 5 });
                                         setIsOpen(true);
                                     }}>
                                         <Edit2 className="h-4 w-4" />
